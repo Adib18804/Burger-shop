@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="img/favicon.png">  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.0.1/remixicon.min.css" integrity="sha512-dTsohxprpcruDm4sjU92K0/Gf1nTKVVskNHLOGMqxmokBSkfOAyCzYSB6+5Z9UlDafFRpy5xLhvpkOImeFbX6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Locations | Wahlburgers</title>
+    <style>
+        /* Ensure the body and html take full height and allow scrolling */
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            overflow: auto;
+        }
+
+        /* Main container */
+        main {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Section styling */
+        section.locations {
+            flex: 1;
+            padding: 20px;
+            overflow-y: auto;
+        }
+
+        /* Contact Form Styling */
+        .contact-form {
+            max-width: 600px;
+            margin: 40px auto;
+            padding: 30px;
+            background: #fff;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            animation: fadeInUp 1s ease-in-out;
+        }
+
+        .contact-form h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 28px;
+            color: #333;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #555;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-size: 16px;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            border-color: #ffcc00;
+            box-shadow: 0 0 8px rgba(255, 204, 0, 0.5);
+            outline: none;
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 150px;
+        }
+
+        .contact-form button {
+            width: 100%;
+            padding: 15px;
+            background: #ffcc00;
+            color: #333;
+            border: none;
+            border-radius: 8px;
+            font-size: 18px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.3s ease, transform 0.3s ease;
+        }
+
+        .contact-form button:hover {
+            background: #e6b800;
+            transform: translateY(-2px);
+        }
+
+        /* Animation for the form */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <nav>
+            <a href="index.html" class="logo"> <img src="img/logo.png" alt="logo"></a>
+            <a href="locations.html" class="active">LOCATIONS</a>
+            <a href="shop.html">SHOP</a>
+            <a href="gift-cards.html">GIFT CARDS</a>
+            <a href="food-truck.html">FOOD TRUCK</a>
+            <a href="#" class="menu curve-btn">MENU <span><i class="ri-book-open-line"></i></span></a>
+            <a href="tel:xxxxxxxxxxx">+880 17629204612</a>
+            <div class="select curve-btn">DHAKA <i class="ri-arrow-down-s-line"></i></div>
+        </nav>
+        <section class="locations">
+            <h1>OUR LOCATIONS</h1>
+            <div class="location-list">
+                <div class="location">
+                    <h2>Dhaka</h2>
+                    <p>123 Main Street, Dhaka, Bangladesh</p>
+                    <!-- Embedded Google Map -->
+                    <div class="map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.793849086063!2d90.4066373154312!3d23.7509728845892!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8b33cffc3fb%3A0x4a826f475fd312af!2sDhaka%2C%20Bangladesh!5e0!3m2!1sen!2sus!4v1697212345678!5m2!1sen!2sus"
+                            width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+                <div class="location">
+                    <h2>Chittagong</h2>
+                    <p>456 Ocean Road, Chittagong, Bangladesh</p>
+                    <!-- Embedded Google Map -->
+                    <div class="map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3691.8225099999997!2d91.812315315425!3d22.356674785323!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30acd89a6c5d3b3b%3A0x3b4e4b7c5f5f5f5f!2sChittagong%2C%20Bangladesh!5e0!3m2!1sen!2sus!4v1697212345678!5m2!1sen!2sus"
+                            width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+                <div class="location">
+                    <h2>Sylhet</h2>
+                    <p>789 Tea Garden Lane, Sylhet, Bangladesh</p>
+                    <!-- Embedded Google Map -->
+                    <div class="map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3618.9345099999997!2d91.867315315425!3d24.894674785323!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3751ab33cffc3fb%3A0x4a826f475fd312af!2sSylhet%2C%20Bangladesh!5e0!3m2!1sen!2sus!4v1697212345678!5m2!1sen!2sus"
+                            width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="contact-form">
+                <h2>CONTACT US</h2>
+                <form action="#" method="POST">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" placeholder="Write your message here..."
+                            required></textarea>
+                    </div>
+                    <button type="submit" class="curve-btn">SEND MESSAGE</button>
+                </form>
+            </div>
+        </section>
+        <footer>
+            <div class="options">
+                <div class="option">
+                    <img src="img/burger.png" alt="">
+                </div>
+                <div class="option active">
+                    <img src="img/burger.png" alt="">
+                </div>
+                <div class="option">
+                    <img src="img/burger.png" alt="">
+                </div>
+                <div class="option">
+                    <img src="img/burger.png" alt="">
+                </div>
+                <div class="option">
+                    <img src="img/burger.png" alt="">
+                </div>
+            </div>
+            <div class="navigate">
+                <button class="yellow">
+                    <i class="ri-arrow-left-s-line"></i>
+                </button>
+                <button>
+                    <i class="ri-arrow-right-s-line"></i>
+                </button>
+            </div>
+        </footer>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"
+        integrity="sha512-EZI2cBcGPnmR89wTgVnN3602Yyi7muWo8y1B3a8WmIv1J9tYG+udH4LvmYjLiGp37yHB7FfaPBo8ly178m9g4Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        // GSAP Animations
+        gsap.from(".location, .contact-form", {
+            y: 50,
+            opacity: 0,
+            stagger: 0.2,
+            duration: 0.8,
+        });
+    </script>
+</body>
+
+</html>

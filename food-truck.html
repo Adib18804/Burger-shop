@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="img/favicon.png">  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.0.1/remixicon.min.css" integrity="sha512-dTsohxprpcruDm4sjU92K0/Gf1nTKVVskNHLOGMqxmokBSkfOAyCzYSB6+5Z9UlDafFRpy5xLhvpkOImeFbX6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Food Truck | Wahlburgers</title>
+</head>
+<body>
+    <main>
+        <nav>
+            <a href="index.html" class="logo"> <img src="img/logo.png" alt="logo"></a>
+            <a href="locations.html">LOCATIONS</a>
+            <a href="shop.html">SHOP</a>
+            <a href="gift-cards.html">GIFT CARDS</a>
+            <a href="food-truck.html" class="active">FOOD TRUCK</a>
+            <a href="#" class="menu curve-btn">MENU <span><i class="ri-book-open-line"></i></span></a>
+            <a href="tel:xxxxxxxxxxx">+880 17629204612</a>
+            <div class="select curve-btn">DHAKA <i class="ri-arrow-down-s-line"></i></div>
+        </nav>
+        <section class="food-truck">
+            <h1>FOOD TRUCK SCHEDULE</h1>
+            <div class="schedule">
+                <div class="event">
+                    <h2>Dhaka Food Festival</h2>
+                    <p>Date: October 15, 2023</p>
+                    <p>Time: 12:00 PM - 8:00 PM</p>
+                    <p>Location: Dhaka Convention Center</p>
+                </div>
+                <div class="event">
+                    <h2>Chittagong Beach Party</h2>
+                    <p>Date: October 22, 2023</p>
+                    <p>Time: 2:00 PM - 10:00 PM</p>
+                    <p>Location: Patenga Beach</p>
+                </div>
+                <div class="event">
+                    <h2>Sylhet Tea Festival</h2>
+                    <p>Date: October 29, 2023</p>
+                    <p>Time: 10:00 AM - 6:00 PM</p>
+                    <p>Location: Sylhet Tea Gardens</p>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="options">
+                <div class="option">
+                    <img src="img/burger.png" alt="">
+                </div>
+                <div class="option active">
+                    <img src="img/burger.png" alt="">
+                </div>
+                <div class="option">
+                    <img src="img/burger.png" alt="">
+                </div>
+                <div class="option">
+                    <img src="img/burger.png" alt="">
+                </div>
+                <div class="option">
+                    <img src="img/burger.png" alt="">
+                </div>
+            </div>
+            <div class="navigate">
+                <button class="yellow">
+                    <i class="ri-arrow-left-s-line"></i>
+                </button>
+                <button>
+                    <i class="ri-arrow-right-s-line"></i>
+                </button>
+            </div>
+        </footer>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js" integrity="sha512-EZI2cBcGPnmR89wTgVnN3602Yyi7muWo8y1B3a8WmIv1J9tYG+udH4LvmYjLiGp37yHB7FfaPBo8ly178m9g4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        // GSAP Animations (if needed)
+        gsap.from(".event", {
+            y: 50,
+            opacity: 0,
+            stagger: 0.2,
+            duration: 0.8,
+        });
+    </script>
+</body>
+</html>

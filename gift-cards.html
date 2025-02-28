@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="img/favicon.png">  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.0.1/remixicon.min.css" integrity="sha512-dTsohxprpcruDm4sjU92K0/Gf1nTKVVskNHLOGMqxmokBSkfOAyCzYSB6+5Z9UlDafFRpy5xLhvpkOImeFbX6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Gift Card Offer | Wahlburgers</title>
+</head>
+<body>
+    <main>
+        <nav>
+            <a href="index.html" class="logo"> <img src="img/logo.png" alt="logo"></a>
+            <a href="locations.html">LOCATIONS</a>
+            <a href="shop.html">SHOP</a>
+            <a href="gift-cards.html" class="active">GIFT CARDS</a>
+            <a href="food-truck.html">FOOD TRUCK</a>
+            <a href="#" class="menu curve-btn">MENU <span><i class="ri-book-open-line"></i></span></a>
+            <a href="tel:xxxxxxxxxxx">+880 17629204612</a>
+            <div class="select curve-btn">DHAKA <i class="ri-arrow-down-s-line"></i></div>
+        </nav>
+
+        <section class="gift-cards">
+            <h1>SPECIAL GIFT CARD OFFER </h1>
+            <p class="offer-text">Get **20% OFF** on all gift cards for a limited time!</p>
+            
+            <div class="card-options">
+                <div class="card">
+                    <h2>$25 Gift Card</h2>
+                    <p>Now only **$20**! Perfect for a meal for two.</p>
+                    <button class="curve-btn">GRAB THIS OFFER</button>
+                </div>
+                <div class="card">
+                    <h2>$50 Gift Card</h2>
+                    <p>Now only **$40**! Great for a family feast.</p>
+                    <button class="curve-btn">GRAB THIS OFFER</button>
+                </div>
+                <div class="card">
+                    <h2>$100 Gift Card</h2>
+                    <p>Now only **$80**! For the ultimate Wahlburgers experience.</p>
+                    <button class="curve-btn">GRAB THIS OFFER</button>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>Offer valid until <strong>March 15, 2025</strong>. Hurry up!</p>
+            <div class="navigate">
+                <button class="yellow">
+                    <i class="ri-arrow-left-s-line"></i>
+                </button>
+                <button>
+                    <i class="ri-arrow-right-s-line"></i>
+                </button>
+            </div>
+        </footer>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js" integrity="sha512-EZI2cBcGPnmR89wTgVnN3602Yyi7muWo8y1B3a8WmIv1J9tYG+udH4LvmYjLiGp37yHB7FfaPBo8ly178m9g4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        // GSAP Animations
+        gsap.from(".card", {
+            y: 50,
+            opacity: 0,
+            stagger: 0.2,
+            duration: 0.8,
+        });
+    </script>
+</body>
+</html>
